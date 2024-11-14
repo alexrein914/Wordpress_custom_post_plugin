@@ -1,0 +1,1 @@
+# Wordpress_custom_post_plugin
