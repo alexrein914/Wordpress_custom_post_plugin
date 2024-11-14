@@ -1,0 +1,160 @@
+:root {
+    --alex-primary-color: rgb(0 152 184);
+}
+/*
+@description: define css
+@alex
+*/
+.search-interest {
+    background-color: var(--alex-primary-color);
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px 50px;
+    align-items: center;
+    justify-content: center;
+}
+.search-interest-title {
+    font-size: 40px;
+    color: white;
+    padding: 5px 5px 5px 70px;
+}
+.search-interest-input {
+    padding-right: 70px;
+}
+.university .university-title {
+    color: white;
+    border-top: 3px solid var(--alex-primary-color);
+    margin-bottom: 30px;
+}
+.university .university-title span {
+    width: 25%;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: var(--alex-primary-color);
+}
+.university_name{
+    width: 25%;
+    margin-top: 20px;
+    border: 1px solid var(--alex-primary-color);
+}
+
+
+.title {
+    padding-top: 10px;
+    color: black;
+}
+.title .college_name {
+    margin-bottom: 5px;
+}
+.title .description {
+    font-size: 17px;
+}
+
+.major {
+    display: flex;
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.major_name, .location {
+    margin-right: 20px;
+    margin-bottom: 1em;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 10px 5px;
+    border: 1px solid rgb(125, 174, 214);
+    /* border-bottom: 6px solid transparent;  */
+    font-size: 16px;
+    color: rgb(23, 26, 28);
+    border-radius: 10px;
+     &:active {
+      outline: 0;
+      border-bottom: none;
+    }
+}
+.major_name:active{
+    border-radius: 1px solid lightgray;
+}
+
+.universities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Space between columns */
+}
+.university_content h4 {
+    color: var(--alex-primary-color);
+}
+.university_content a {
+    font-weight: 600;
+    color: black;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/**
+    Program Info Style
+*/
+.program .u-name h1,
+.program .overview h2 {
+    color: var(--alex-primary-color);
+    font-weight: bold;
+}
+.program .u-name p {
+    font-size: x-large;
+    padding-bottom: 50px;
+    border-bottom: 3px solid var(--alex-primary-color);
+}
+.program .overview {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.program .overview p {
+    font-size: x-large;
+}
+.program .pg-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Space between columns */
+}
+.program .pg-info-item p {
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+}
+
+/**
+    Interest Style
+*/
+.interest {
+    margin-top: 50px;
+}
+.interest .interest-title {
+    color: white;
+    border-top: 3px solid var(--alex-primary-color);
+    margin-bottom: 30px;
+}
+.interest .interest-title span {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: var(--alex-primary-color);
+}
+.interest .interest-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+.interest .interest-box div span {
+    font-size: x-large;
+    font-weight: bold;
+}
+.interest .interest-box div textarea {
+    height: 160px;
+    resize: none;
+    border-radius: 20px;
+}
+.interest .interest-box div input {
+    border-radius: 10px;
+}
